@@ -6,44 +6,37 @@ body {
   color: #F9FAF8;
   font-family: 'Karla', sans-serif;
 }
-
-h1 {
-  font-size: 1.7em;
+.containerHeader {
+  background-color: #1F2937;
+  padding: 0 10%;
+  font-size: 1.4em;
+}
+.containerHeader h1 {
+  font-size: 1.3em;
   color: #F9FAF8;
   font-weight: 600;
   margin: 0;
 }
-h2 {
-  font-size: 1.5em;
-  color: #1F2937;
-  font-weight: 600;
-  margin: 0;
-}
-.sub-title {
-  font-size: 0.9em;
-  font-weight: 300;
-  line-height: 1.7rem;
-  padding: 1rem 0;
-}
-
-.containerHeader {
-  background-color: #1F2937;
-  padding: 0 10%;
-}
 .containerMenu {
   background-color: #ffffff;
   padding: 5rem 10%;
+  font-size: 1.4em;
 }
 .containerMenu h2 {
   text-align: center;
+  font-size: 1.3em;
+  color: #1F2937;
+  margin: 0;
 }
 .containerQuote {
   background-color: #eeeeee;
-  padding: 0 10%;
+  padding: 4rem 15%;
+  font-size: 1.4em;
 }
 .containerCall {
   background-color: #ffffff;
-  padding: 0 10%;
+  padding: 4rem 10%;
+  font-size: 1.4em;
 }
 
 .headerBar {
@@ -55,7 +48,6 @@ h2 {
 
 .headerBar .one {
   flex: 1 1 0%;
-  font-size: 1.4em;
   letter-spacing: -0.5px;
   font-weight: 400;
   align-self: center;
@@ -74,6 +66,7 @@ h2 {
   flex-wrap: wrap;
   gap: 3rem;
   padding: 7rem 0;
+  font-size: 1em;
 }
 .headerArea .one {
   flex: 1 1 0%;
@@ -86,18 +79,27 @@ h2 {
   text-align: right;
   align-self: center;
   min-height: 17rem;
-  background-image: url(./images/steaks.jpg);
-  background-size: 125%;
+  background-image: url(./images/header-steak.jpg);
+  background-position:center;
+  background-size: 110%;
   background-repeat: no-repeat;
   border-radius: 10px;
   border: 4px solid #373737;
 }
-
 .headerArea .image {
   max-width: 400px;
   height: 230px;
   background-color: #eee;
   border-radius: 10px;
+}
+.headerArea .title {
+  font-size: 0.7em;
+  font-weight: 300;
+  line-height: 1.7rem;
+  padding: 1rem 0;
+}
+.headerArea .button {
+  font-size: 0.7em;
 }
 .menuSection {
   display: flex;
@@ -117,6 +119,10 @@ h2 {
   opacity: 0.9;
   background-repeat: no-repeat;
   border-radius: 10px;
+  font-size: 1em;
+}
+.menuSection .title {
+  padding: 40% 0;
 }
 
 .steaks {
@@ -137,21 +143,61 @@ h2 {
 .menuSection .item:hover {
   opacity: 0.5;
 }
-.menuSection .title {
+.quoteSection {
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+  color: #1F2937;
+}
+.quoteSection .review {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-align: justify;
+}
+.quoteSection .reviewer {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: right;
+}
+.callSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 4rem 4rem;
+  background-color:#1F2937;
+}
+.callSection .title {
+  font-size: 1.3em;
+}
+.callSection .sub-title {
+  font-size: 0.6em;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+.callSection .one {
+  flex: 3 1 0%;
   font-size: 1.4em;
-  letter-spacing: -0.5px;
   font-weight: 400;
-  color: #ffffff;
-  padding: 40% 0;
+  text-align: left;
+  align-self: center;
+}
+.callSection .two {
+  flex: 1 1 0%;
+  text-align: right;
+  align-self: center;
+}
+.callSection .button {
+  font-size: 0.9em;
 }
 .button {
   border-radius: 10px;
   padding: 0.55em 1.6em;
   background-color: #dfc312;
   color: #333;
-  width: 120px;
+  width: 140px;
   text-align: center;
-  font-size: 0.9em;
   margin-top: 1rem;
 }
 a {
