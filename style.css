@@ -81,13 +81,12 @@ h2 {
   font-size: 1.4em;
   font-weight: 400;
   text-align: left;
-  border: 1px solid red;
 }
 .headerArea .right {
   flex: 1 1 0%;
   text-align: right;
   align-self: center;
-  border: 1px solid red;
+  background-image: url(.images/steak.jpg);
 }
 .headerArea .right img {
   width: 100%;
