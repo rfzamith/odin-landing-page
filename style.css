@@ -53,19 +53,19 @@ h2 {
   padding: 1rem 0;
 }
 
-.headerBar .left {
+.headerBar .one {
   flex: 1 1 0%;
   font-size: 1.4em;
   letter-spacing: -0.5px;
   font-weight: 400;
   align-self: center;
 }
-.headerBar .right {
+.headerBar .two {
   flex: 4 1 0%;
   text-align: right;
   align-self: center;
 }
-.headerBar .right ul li {
+.headerBar .two ul li {
   display: inline;
   padding: 0.6rem;
 }
@@ -75,25 +75,24 @@ h2 {
   gap: 3rem;
   padding: 7rem 0;
 }
-.headerArea .left {
+.headerArea .one {
   flex: 1 1 0%;
   font-size: 1.4em;
   font-weight: 400;
   text-align: left;
 }
-.headerArea .right {
+.headerArea .two {
   flex: 1 1 0%;
   text-align: right;
   align-self: center;
   min-height: 17rem;
-  height: 100%;
-}
-.headerArea img {
-  width: 100%;
-  height: 100%;
-  min-width: 300px;
+  background-image: url(./images/steaks.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
   border-radius: 10px;
+  border: 4px solid #373737;
 }
+
 .headerArea .image {
   max-width: 400px;
   height: 230px;
@@ -109,16 +108,41 @@ h2 {
 }
 
 .menuSection .item {
-  flex: 1 1 0%;
+  flex: 1 1 10%;
+  align-self: center;
+  border:4px solid #dbdbdb;
+  text-align: center;
+  background-size: 150%;
+  aspect-ratio: 1 / 1;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.steaks {
+  background-image: url(./images/steaks.jpg);
+}
+.appetizers {
+  background-image: url(./images/appetizers.jpg);
+}
+.burgers {
+  background-image: url(./images/burgers.jpg);
+}
+.drinks {
+  background-image: url(./images/drinks.jpg);
+}
+.desserts {
+  background-image: url(./images/desserts.jpg);
+}
+.menuSection .item:hover {
+  opacity: 0.5;
+}
+.menuSection .title {
   font-size: 1.4em;
   letter-spacing: -0.5px;
   font-weight: 400;
-  align-self: center;
-  color: #1F2937;
-  border:1px solid #eee;
-  text-align: center;
-  padding: 3.5rem 0;
-
+  color: #ffffff;
+  padding: 40% 0;
 }
 .button {
   border-radius: 10px;
